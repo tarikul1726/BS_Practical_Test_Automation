@@ -1,6 +1,5 @@
 package bs_practical_test;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -19,7 +18,7 @@ public class AutomationTest {
 		Thread.sleep(5000);
 
 		driver.findElementByXPath("//a[@class=\"login\"]").click();
-		driver.findElementByXPath("//input[@id=\"email_create\"]").sendKeys("tarikul9@gmail.com");
+		driver.findElementByXPath("//input[@id=\"email_create\"]").sendKeys("tarikul26@gmail.com");
 		driver.findElementByXPath("//button[@id=\"SubmitCreate\"]").click();
 		
 		Thread.sleep(5000);
@@ -58,7 +57,7 @@ public class AutomationTest {
 		stateSelect.selectByValue("3");
 		
 		driver.findElementByXPath("//input[@name=\"postcode\"]").sendKeys("12010");
-		driver.findElementByXPath("//textarea[@name=\"other\"]").sendKeys("Dhaka");
+		driver.findElementByXPath("//textarea[@name=\"other\"]").sendKeys("N/A");
 		driver.findElementByXPath("//input[@name=\"phone\"]").sendKeys("01735096282");
 		driver.findElementByXPath("//input[@name=\"phone_mobile\"]").sendKeys("01735096282");
 		driver.findElementByXPath("//input[@name=\"alias\"]").sendKeys(": Jamalpur");
@@ -73,15 +72,13 @@ public class AutomationTest {
 		
 		Thread.sleep(5000);
 
-		driver.findElementByXPath("//input[@id='email']").sendKeys("tarikul9@gmail.com");
+		driver.findElementByXPath("//input[@id='email']").sendKeys("tarikul26@gmail.com");
 		driver.findElementByXPath("//input[@id=\"passwd\"]").sendKeys("123456");
 		driver.findElementByXPath("//button[@id=\"SubmitLogin\"]").click();
 		
 		Thread.sleep(5000);
 
-		driver.close();
-
-		
+		driver.close();		
 	}
 
 }
